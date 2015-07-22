@@ -1,4 +1,4 @@
-# Blingtstic
+# Blingtastic
 Blingtastic is an auto voter for contests on [Blingee](http://blingee.com)
 
 ## Setup
