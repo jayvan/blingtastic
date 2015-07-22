@@ -18,7 +18,7 @@ loop do
   right = voting_page.form_with(id: 'formVoteRight')
 
   left_id = left.field_with(name: 'winning_blingee').value.to_i
-  right_id = right.field_with(name: 'winning_blingee').value
+  right_id = right.field_with(name: 'winning_blingee').value.to_i
 
   if left_id == image_id
     print '!'
