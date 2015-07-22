@@ -41,7 +41,7 @@ loop do
   end
 
   voting_page.search('.results tr').each do |result|
-    result_id = result.search('a')[0].attributes['href'].value.split('/').last
+    result_id = result.search('a')[0].attributes['href'].value.split('/').last.to_i
     result_score = result.search('li .resultstat')[1].text.to_i
     scores[result_id] = result_score
   end
