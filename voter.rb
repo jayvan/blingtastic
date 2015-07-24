@@ -59,5 +59,6 @@ loop do
   puts "Total votes:             #{total_votes}"
   puts "Total votes for target:  #{total_votes_for_target}"
 
+  GC.start if total_votes % 1000 == 0
   sleep(rand())
 end
